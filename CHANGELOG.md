@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Clarified that users must supply their own Bambu Studio printer preset JSON
+  files and that automated part ejection depends on those presets already
+  containing tested ejection G-code.
+
 ## [0.1.0] - 2026-07-09
 
 Initial working release.

@@ -104,7 +104,8 @@ git clone https://github.com/ostat/gridfinity_extended_openscad.git
 
 ## Printer Presets
 
-Export or copy printer preset JSON files from Bambu Studio into:
+This repo does not include printer preset JSON files. Each user must export or
+copy their own Bambu Studio printer presets into:
 
 ```text
 profiles/printer-presets/
@@ -144,6 +145,24 @@ the final `.gcode.3mf` package.
 These JSON files are intentionally ignored by Git because they are local Bambu
 Studio exports. Keep the `.gitkeep` files so another user gets the expected
 folder structure after cloning.
+
+### Part-Ejection G-Code
+
+Automated repeat printing requires a printer preset that already contains the
+desired part-ejection G-code. This project does not generate, validate, or
+install part-ejection machine code by itself.
+
+If you want Printago to run bins as unattended repeat jobs:
+
+- Create or copy a Bambu Studio printer preset that includes your tested
+  part-ejection start/end G-code.
+- Export that preset JSON into `profiles/printer-presets/`.
+- Create the matching CLI copy in `profiles/cli-printer-presets/`.
+- Slice with that profile so the ejection behavior is embedded in the generated
+  `Metadata/plate_1.gcode` inside each `.gcode.3mf`.
+
+Part-ejection G-code is printer-, build-plate-, filament-, and part-specific.
+Test it carefully before using it for unattended production.
 
 ## Bin Defaults
 
@@ -273,6 +292,11 @@ work files:     work/slicer/
 
 The script is resumable. If `--force` is omitted, existing final packages are
 skipped.
+
+The generated `.gcode.3mf` files inherit machine behavior from the selected
+Bambu printer preset. If the preset includes part-ejection G-code, the packaged
+G-code will include it. If the preset does not include part-ejection G-code, the
+packages will be normal sliced print files.
 
 If Bambu Studio takes longer on a file, increase the timeout:
 
