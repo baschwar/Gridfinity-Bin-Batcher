@@ -9,6 +9,8 @@
   containing tested ejection G-code.
 - Added a reference to the companion
   `baschwar/3D-Printed-Part-Ejection-GCode` repo for part-ejection setup.
+- Added README attribution for `ostat/gridfinity_extended_openscad` and Zack
+  Freedman / Voidstar Lab's Gridfinity work.
 
 ## [0.1.0] - 2026-07-09
 

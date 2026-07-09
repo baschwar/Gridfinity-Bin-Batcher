@@ -10,6 +10,16 @@ This repo should stay focused on Gridfinity bins. The broader idea, turning
 arbitrary STL/3MF files into Printago-ready plate-sliced packages, is captured
 separately in `FUTURE_PRINTAGO_AUTOMATION.md`.
 
+## Attribution
+
+This project builds on
+[ostat/gridfinity_extended_openscad](https://github.com/ostat/gridfinity_extended_openscad)
+for the underlying Gridfinity Extended OpenSCAD models.
+
+Gridfinity itself was created by Zack Freedman / Voidstar Lab. See
+[zackfreedman.com](https://zackfreedman.com/) for the original Gridfinity work
+and related projects.
+
 ## Current Status
 
 The standard library has been generated and validated locally:
@@ -52,7 +62,8 @@ Required:
 - Python packages in `requirements.txt`
 - OpenSCAD Developer Snapshot
 - Bambu Studio with CLI access
-- Upstream `ostat/gridfinity_extended_openscad`
+- Upstream
+  [ostat/gridfinity_extended_openscad](https://github.com/ostat/gridfinity_extended_openscad)
 - Exported Bambu printer preset JSON files
 
 Optional but recommended:
