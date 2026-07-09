@@ -152,6 +152,9 @@ Automated repeat printing requires a printer preset that already contains the
 desired part-ejection G-code. This project does not generate, validate, or
 install part-ejection machine code by itself.
 
+For part-ejection setup, see the companion repo:
+[baschwar/3D-Printed-Part-Ejection-GCode](https://github.com/baschwar/3D-Printed-Part-Ejection-GCode).
+
 If you want Printago to run bins as unattended repeat jobs:
 
 - Create or copy a Bambu Studio printer preset that includes your tested

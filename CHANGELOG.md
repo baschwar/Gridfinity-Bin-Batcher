@@ -7,6 +7,8 @@
 - Clarified that users must supply their own Bambu Studio printer preset JSON
   files and that automated part ejection depends on those presets already
   containing tested ejection G-code.
+- Added a reference to the companion
+  `baschwar/3D-Printed-Part-Ejection-GCode` repo for part-ejection setup.
 
 ## [0.1.0] - 2026-07-09
 
