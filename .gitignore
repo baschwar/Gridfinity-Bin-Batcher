@@ -1,0 +1,24 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Generated mesh/project/sliced outputs.
+source-output/
+bambu-output/
+sliced-output/
+output/
+bambu-test-output/
+exports/
+work/
+
+# Local upstream checkout and generated profile exports.
+gridfinity_extended_openscad/
+generated-slice-profiles/
+Printer config bundle/
+Printer presets/
+Printer presets.zip
+profiles/**/*.json
+
+# Local scratch files.
+result.json
+bins.xlsx

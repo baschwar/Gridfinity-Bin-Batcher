@@ -1,0 +1,8 @@
+{
+  "pitch": [42, 42, 7],
+  "lip_style": "minimum",
+  "wall_thickness": 1.0,
+  "enable_magnets": false,
+  "enable_screws": false,
+  "label_style": "disabled"
+}
